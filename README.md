@@ -98,18 +98,20 @@ Criamos o protótipo do site para três tipos de telas diferentes: mobile, table
 
 A aplicação foi dividida nas seções:
 
-PÁGINA INICIAL
+#### PÁGINA INICIAL
+
 É a página principal do site, através da qual as usuárias iniciam navegação; podendo ser direcionadas a outras seções da aplicação (as páginas de about, login e cadastro).
 
 ![prototipohomepage](./src/img/homepageRebu.png)
 
 
-ABOUT
+#### ABOUT
+
 Página que contextualiza a rede social, explicando sua definição e proposta.
 
 ![prototipoabout](./src/img/aboutrebu.png)
 
-LOGIN E CADASTRO
+#### LOGIN E CADASTRO
 
 Nossas usuárias podem se cadastrar e entrar utilizando o método do google, ou com e-mail e senha. As usuárias recebem mensagens de apoio para realizar a etapa de registro e login, com validação de formulário. 
 
@@ -118,7 +120,7 @@ Nossas usuárias podem se cadastrar e entrar utilizando o método do google, ou 
 !prototiporegister](./src/img/registerrebu.png)
 
 
-FEED
+#### FEED
 
 Na Rebu é possível publicar, categorizar, dar like, editar e deletar posts. Deste modo, na página de Feed, nossas usuárias poderão publicar posts, categorizar seus posts para serem exibidos conforme a categoria selecionada, editar e deletar os próprios posts, além de dar like em e pesquisar por posts de outras usuárias, e exibir apenas posts que correspondam a determinada categoria, através de um sistema de filtros. 
 
