@@ -124,7 +124,7 @@ Nossas usuárias podem se cadastrar e entrar utilizando o método do google, ou 
 
 Na Rebu é possível publicar, categorizar, dar like, editar e deletar posts. Deste modo, na página de Feed, nossas usuárias poderão publicar posts, categorizar seus posts para serem exibidos conforme a categoria selecionada, editar e deletar os próprios posts, além de dar like em e pesquisar por posts de outras usuárias, e exibir apenas posts que correspondam a determinada categoria, através de um sistema de filtros. 
 
-!prototipofeed](./src/img/feedrebu.png)
+![prototipofeed](./src/img/feedrebu.png)
 
 
 ## 5. Testes unitários e Testes assíncronos
