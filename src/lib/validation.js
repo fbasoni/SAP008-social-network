@@ -32,7 +32,7 @@ export function handleFirebaseErrors(errorCode) {
   }
 }
 
-const emailRegExpression = /[\w.\-+]+@[\w-]+\.[\w-.]/gi;
+const emailRegExpression = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z]+)*$/;
 
 export function validateRegisterForm(name, email, password, confirmPassword) {
   let message;
@@ -45,7 +45,7 @@ export function validateRegisterForm(name, email, password, confirmPassword) {
     message = 'Digite seu e-mail.';
     return message;
   }
-  if (email !== emailValidation) {
+  if (emailValidation === false) {
     message = 'Este e-mail é inválido.';
     return message;
   }
@@ -76,7 +76,7 @@ export function validateLoginForm(email, password) {
     message = 'Digite seu e-mail.';
     return message;
   }
-  if (email !== emailValidation) {
+  if (emailValidation === false) {
     message = 'Este e-mail é inválido.';
     return message;
   }
