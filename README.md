@@ -24,18 +24,20 @@ Além disso, utilizamos o conjunto de serviços de hospedagem Firebase. Para man
 
 Nossas sprints foram planejadas conforme as necessidades apresentadas em nossas histórias de usuário - as quais foram criadas com base na nossa pesquisa de usuário. Deste modo, definimos e trabalhamos no desenvolvimento das funcionalidades de nossa aplicação com base nas necessidades das usuárias. 
 
+
 ## 2. Definição do produto e escolha do tema
 
 Sabemos que, infelizmente, mulheres são expostas, cotidianamente, a situações de discriminação, exclusão e abuso resultantes de uma sociedade misógina e intolerante. 
-Para mulheres lésbicas, essas situações têm ainda o agravante da interseção entre misoginia e homofobia - a lesbofobia. Segundo pesquisa coordenada pelo [Lesbocenso Nacional (2021-2022)](https://lesbocenso.com.br/) - que mapeia o perfil sócio-demográfico e as vivências de mulheres lésbicas e sapatão no Brasil -, 78,6% das entrevistadas já sofreu lesbofobia, e 77,3% conhece alguma mulher lésbica que já foi vítima. 
+Para mulheres lésbicas, essas situações têm ainda o agravante da intersecção entre misoginia e homofobia - a lesbofobia. Segundo pesquisa realizada e publicada pelo Lesbocenso Nacional (2021-2022), https://lesbocenso.com.br/ 78,6% das entrevistadas já sofreu lesbofobia, e 77,3% conhece alguma mulher lésbica que já foi vítima. 
 
-Sendo assim, percebemos, na criação deste projeto, uma oportunidade para criar uma iniciativa que propõe solucionar o problema que é a escassez por espaços inclusivos e feitos exclusivamente para mulheres lésbicas, objetivando proporcionar a elas uma experiência online livre das diversas formas de preconceito que sofrem enquanto mulheres, casais e grupo social, cotidianamente. 
+Sendo assim, vimos, na criação deste projeto, uma oportunidade para criar uma iniciativa que propõe solucionar o problema que é a escassez por espaços inclusivos e feitos exclusivamente para mulheres lésbicas, objetivando proporcionar a elas uma experiência online livre das diversas formas de preconceito que sofrem enquanto mulheres, casais e grupo social, cotidianamente. 
 
-Fundamentando-nos em conceitos de UX, realizamos uma pesquisa de usuário com 20 mulheres lésbicas, através da qual buscamos entender se seria do interesse destas mulheres uma rede social exclusivamente feita para o uso desse público, e se elas já haviam utilizado uma rede social como a que propomos. Conforme os resultados obtidos, 100% das usuárias aprovaram a proposta, nenhuma tendo usado uma rede social como esta antes. A partir da apuração dos resultados, e considerando a problemática em questão, definimos nosso produto da seguinte forma: 
+Fundamentando-nos em conceitos de UX, realizamos uma pesquisa de usuário com 20 mulheres lésbicas, através da qual buscamos entender se seria do interesse destas mulheres uma rede social exclusivamente feita para o uso desse público, e se elas já haviam utilizado uma rede social como a que propomos. Conforme os resultados obtidos, 100% das usuárias aprovaram a proposta. A partir da apuração dos resultados, e considerando a problemática em questão, definimos nosso produto da seguinte forma: 
 
-**Rebu é uma rede social destinada a mulheres lésbicas, possibilitando que elas compartilhem experiências, vivências e interesses,  para se conectarem e formar novos laços.**
+Rebu é uma rede social destinada a mulheres lésbicas, possibilitando que elas compartilhem experiências, vivências e interesses,  para se conectarem e formar novos laços.  
 
-Rebu surgiu como uma forma criativa e tecnológica de solucionar o problema que é a escassez por espaços inclusivos que sejam feitos e pensados exclusivamente para mulheres lésbicas. Sendo assim, o intuito por trás da criação deste projeto é disponibilizar um espaço online, seguro, acolhedor e afirmativo para essas mulheres se conectarem e interagirem. 
+Rebu surgiu como uma forma criativa e tecnológica de solucionar o problema que é a escassez por espaços inclusivos que sejam feitos e pensados exclusivamente para mulheres lésbicas. O intuito por trás da criação deste projeto é disponibilizar um espaço online, seguro, acolhedor e afirmativo para essas mulheres se conectarem e interagirem.
+ 
 
 ## 3. Pesquisa de Usuário e Histórias de Usuários
 
@@ -77,43 +79,53 @@ Incluímos filtragem e categorização de posts, possibilitando que a usuária c
 
 ## 4. Prototipação e testes de usabilidade
 
-Utilizamos o Figma para o processo de prototipação. Utilizando o conceito responsivo Mobile First, iniciamos com a construção do protótipo na versão mobile e construímos a versão desktop após a implementação da primeira. 
+Utilizamos o Figma para o processo de prototipação, e iniciamos o processo pela metodologia de mobile first, de modo que iniciamos com a construção do protótipo na versão mobile.
 
-Nossos protótipos são de alta fidelidade e navegáveis, para telas:
+Pensamos nos protótipos com base nas histórias de usuário, resultando na homepage, página de login, de registrar, sobre a rede social e de feed.
+Após montarmos nossos protótipos, realizamos o teste de usabilidade a fim de oferecer a melhor experiência para a usuária. Após alguns ajustes, o protótipo foi finalizado. Nos próximos tópicos, veremos melhor como se deu os detalhes do layout.
+### 4.1 Paleta de cores e fontes
 
- ### MOBILE:
- ![prototipomobile](./src/img/prototipomobile.png)
+A paleta de cores foi pensada para representar a comunidade lésbica desde a cor do site,, sendo a cor roxa a principal, devido a cor da bandeira do orgulho lésbico. Além disso, utilizamos a fonte Blanka para criar a logo e a fonte Roboto para utilizar na página de login e register.
 
- ### DESKTOP:
- ![prototipodesktop](./src/img/prototipodesktop.png)
+Na imagem, podemos ver as cores principais utilizadas no projeto.
+![paletadecores](./src/img/paletadecores.png)
 
- ### TABLET:
- ![prototipotablet](./src/img/prototipotablet.png)
+### 4.2 Telas
 
-Após a implementação navegável, aplicamos nossos testes de usabilidade, que foram......
+Criamos o protótipo do site para três tipos de telas diferentes: mobile, tablet e desktop.
 
-Pensamos nos protótipos com base nas histórias de usuário... 
+### 4.3. Estrutura e features da aplicação
 
-## 5. Estrutura e funcionalidades da SPA
+A aplicação foi dividida nas seções:
 
-A aplicação foi desenvolvida como uma Single Page Application (SPA), utilizando routing. Sendo assim, foi dividida nas seções:
+PÁGINA INICIAL
+É a página principal do site, através da qual as usuárias iniciam navegação; podendo ser direcionadas a outras seções da aplicação (as páginas de about, login e cadastro).
 
-***#Homepage*** - PÁGINA INICIAL:
-É a página principal do site, através da qual as usuárias iniciam navegação, podendo ser direcionadas a outras seções da aplicação (as páginas de about, login e cadastro).
+![prototipohomepage](./src/img/homepagerebu.png)
 
-***#About*** - SOBRE REBU:
+
+ABOUT
 Página que contextualiza a rede social, explicando sua definição e proposta.
 
-***#Login e #Register*** - ENTRAR E CADASTRAR:
-Nossas usuárias podem se cadastrar e entrar utilizando o método de login do Google, ou utilizando e-mail e senha. As usuárias recebem mensagens de apoio para realizar a etapa de registro e login, com validação de form.
+![prototipoabout](./src/img/aboutrebu.png)
 
-***#reset-password*** - REDEFINIÇÃO DE SENHA:
-Página para as usuárias recuperarem acesso a suas contas caso esqueçam a senha - após preenchimento do form sinalizando o e-mail cadastrado, elas recebem um e-mail com link para redefinir a senha. 
+LOGIN E CADASTRO
 
-***#feed*** - FEED:
-Página na qual nossas usuárias poderão publicar posts, categorizar seus posts para serem exibidos conforme a categoria selecionada, editar e deletar os próprios posts, além de dar like em posts de outras usuárias, e exibir apenas posts que correspondam a determinada categoria, através de um sistema de filtros. 
+Nossas usuárias podem se cadastrar e entrar utilizando o método do google, ou com e-mail e senha. As usuárias recebem mensagens de apoio para realizar a etapa de registro e login, com validação de formulário. 
 
-## 6. Testes unitários e Testes assíncronos
+![prototipologin](./src/img/loginrebu.png)
+
+!prototiporegister](./src/img/registerrebu.png)
+
+
+FEED
+
+Na Rebu é possível publicar, categorizar, dar like, editar e deletar posts. Deste modo, na página de Feed, nossas usuárias poderão publicar posts, categorizar seus posts para serem exibidos conforme a categoria selecionada, editar e deletar os próprios posts, além de dar like em e pesquisar por posts de outras usuárias, e exibir apenas posts que correspondam a determinada categoria, através de um sistema de filtros. 
+
+!prototipofeed](./src/img/feedrebu.png)
+
+
+## 5. Testes unitários e Testes assíncronos
 
 Os testes desse projeto foram desenvolvidos pra verificar a quantidade de chamada das funções do firebase e com quais parâmetros essas funções são chamadas.
 
@@ -122,7 +134,7 @@ Rebu foi nossa primeira experiência com mock de função. Usamos o framework Je
  ![Testes](./src/img/print_testes.png)
 
 
-## 7. Ferramentas e Tech Skills
+## 6. Ferramentas e Tech Skills
 
 - Figma;
 - Notion;
