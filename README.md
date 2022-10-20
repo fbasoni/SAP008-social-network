@@ -101,7 +101,7 @@ A aplicação foi dividida nas seções:
 PÁGINA INICIAL
 É a página principal do site, através da qual as usuárias iniciam navegação; podendo ser direcionadas a outras seções da aplicação (as páginas de about, login e cadastro).
 
-![prototipohomepage](./src/img/homepagerebu.png)
+![prototipohomepage](./src/img/homepageRebu.png)
 
 
 ABOUT
