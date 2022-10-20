@@ -73,7 +73,6 @@ Incluímos filtragem e categorização de posts, possibilitando que a usuária c
   - Fazer testes manuais buscando erros e imperfeições simples.
   - Fazer testes de usabilidade e incorporar o _feedback_ dos usuários como
     melhorias.
-  - Fazer deploy do aplicativo e marcar a versão (git tag).
 
 ## 4. Prototipação e testes de usabilidade
 
