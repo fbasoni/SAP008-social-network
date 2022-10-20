@@ -110,6 +110,11 @@ describe('deletePost', () => {
     expect(deleteDoc).toHaveBeenCalledTimes(1);
     expect(deleteDoc).toHaveBeenCalledWith(mockRef);
   });
+
+  it('deve exibir mensagem de erro ao deletar o post', async () => {
+    deleteDoc.mockRejectedValue();
+    expect(deleteDoc).not.toHaveBeenCalled();
+  });
 });
 
 describe('createPost', () => {
