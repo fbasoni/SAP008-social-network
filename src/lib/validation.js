@@ -32,10 +32,11 @@ export function handleFirebaseErrors(errorCode) {
   }
 }
 
+const emailRegExpression = /[\w.\-+]+@[\w-]+\.[\w-.]/gi;
+
 export function validateRegisterForm(name, email, password, confirmPassword) {
   let message;
-  // const emailRegExpression = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-
+  const emailValidation = emailRegExpression.test(email);
   if (name === '') {
     message = 'Digite seu nome.';
     return message;
@@ -44,10 +45,10 @@ export function validateRegisterForm(name, email, password, confirmPassword) {
     message = 'Digite seu e-mail.';
     return message;
   }
-  // if (email !== emailRegExpression) {
-  //   message = 'Este e-mail é inválido.';
-  //   return message;
-  // }
+  if (email !== emailValidation) {
+    message = 'Este e-mail é inválido.';
+    return message;
+  }
   if (password === '') {
     message = 'Digite sua senha.';
     return message;
@@ -69,20 +70,19 @@ export function validateRegisterForm(name, email, password, confirmPassword) {
 
 export function validateLoginForm(email, password) {
   let message;
-  // const emailRegExpression = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  const emailValidation = emailRegExpression.test(email);
 
   if (email === '') {
     message = 'Digite seu e-mail.';
     return message;
   }
-  // if (email !== emailRegExpression) {
-  //   message = 'Este e-mail é inválido.';
-  //   return message;
-  // }
+  if (email !== emailValidation) {
+    message = 'Este e-mail é inválido.';
+    return message;
+  }
   if (password === '') {
     message = 'Digite sua senha.';
     return message;
   }
-
   return '';
 }
