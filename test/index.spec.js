@@ -1,6 +1,6 @@
 import {
   loginWithGoogle, loginWithEmailAndPassword, registerWithEmailAndPassword,
-  logoff,
+  logoff, userStateChanged, resetPassword,
 } from '../src/lib/firebase-auth.js';
 
 import {
@@ -10,13 +10,20 @@ import {
 import {
   signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword,
   getAuth, updateProfile, deleteDoc, doc, addDoc, updateDoc,
-  getDoc, getDocs, signOut,
+  getDoc, getDocs, signOut, onAuthStateChanged, sendPasswordResetEmail,
 } from '../src/lib/exports.js';
 
 jest.mock('../src/lib/exports.js');
 
 beforeEach(() => {
   jest.clearAllMocks();
+});
+
+describe('userStateChanged', () => {
+  it('a função deve verificar se o usuário está logado', () => {
+    userStateChanged();
+    expect(onAuthStateChanged).toHaveBeenCalledTimes(1);
+  });
 });
 
 describe('loginWithGoogle', () => {
@@ -60,6 +67,20 @@ describe('registerWithEmailAndPassword', () => {
     expect(updateProfile).toHaveBeenCalledWith(mockGetAuth.currentUser, {
       displayName: name,
     });
+  });
+});
+
+describe('resetPassword', () => {
+  it('a função deve enviar um e-mail para o usuário redefinir a senha', () => {
+    const email = 'email@email.com';
+    resetPassword(email);
+    expect(sendPasswordResetEmail).toHaveBeenCalledTimes(1);
+    expect(sendPasswordResetEmail).toHaveBeenCalledWith({
+      currentUser: {
+        uid: '123',
+        displayName: 'nome',
+      },
+    }, email);
   });
 });
 
