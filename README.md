@@ -7,10 +7,8 @@
 * [2. Definição do produto e escolha do tema](#2-definição-do-produto-e-escolha-do-tema)
 * [3. Pesquisa de Usuário e Histórias de Usuários](#3-pesquisa-de-usuário-e-histórias-de-usuários)
 * [4. Prototipação e testes de usabilidade](#4-prototipação-e-testes-de-usabilidade)
-* [5. Estrutura e funcionalidades da SPA](#5-estrutura-e-funcionalidades-da-SPA)
-* [6. Testes unitários e Testes assíncronos](#6-testes-unitários-e-assíncronos)
-* [7. Ferramentas e Tech Skills](#7-ferramentas-e-tech-skills)
-* [8. Considerações finais](#8-considerações-finais)
+* [5. Testes unitários e Testes assíncronos](#5-testes-unitários-e-testes-assíncronos
+* [6. Ferramentas e Tech Skills](#6-ferramentas-e-tech-skills)
 
 ***
 
@@ -117,7 +115,7 @@ Nossas usuárias podem se cadastrar e entrar utilizando o método do google, ou 
 
 ![prototipologin](./src/img/loginrebu.png)
 
-!prototiporegister](./src/img/registerrebu.png)
+![prototiporegister](./src/img/registerrebu.png)
 
 
 #### FEED
