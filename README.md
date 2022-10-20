@@ -81,11 +81,13 @@ Utilizamos o Figma para o processo de prototipação, e iniciamos o processo pel
 
 Pensamos nos protótipos com base nas histórias de usuário, resultando na homepage, página de login, de registrar, sobre a rede social e de feed.
 Após montarmos nossos protótipos, realizamos o teste de usabilidade a fim de oferecer a melhor experiência para a usuária. Após alguns ajustes, o protótipo foi finalizado. Nos próximos tópicos, veremos melhor como se deu os detalhes do layout.
+
 ### 4.1 Paleta de cores e fontes
 
 A paleta de cores foi pensada para representar a comunidade lésbica desde a cor do site,, sendo a cor roxa a principal, devido a cor da bandeira do orgulho lésbico. Além disso, utilizamos a fonte Blanka para criar a logo e a fonte Roboto para utilizar na página de login e register.
 
 Na imagem, podemos ver as cores principais utilizadas no projeto.
+
 ![paletadecores](./src/img/paletadecores.png)
 
 ### 4.2 Telas
