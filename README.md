@@ -7,7 +7,7 @@
 * [2. Definição do produto e escolha do tema](#2-definição-do-produto-e-escolha-do-tema)
 * [3. Pesquisa de Usuário e Histórias de Usuários](#3-pesquisa-de-usuário-e-histórias-de-usuários)
 * [4. Prototipação e testes de usabilidade](#4-prototipação-e-testes-de-usabilidade)
-* [5. Testes unitários e Testes assíncronos](#5-testes-unitários-e-testes-assíncronos
+* [5. Testes unitários e Testes assíncronos](#5-testes-unitários-e-testes-assíncronos)
 * [6. Ferramentas e Tech Skills](#6-ferramentas-e-tech-skills)
 
 ***
