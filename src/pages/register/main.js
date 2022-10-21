@@ -25,21 +25,17 @@ export default () => {
 
         <main class="register-content display-flex">
 
-          <h1 class="text-desktop">CADASTRE-SE</h1>
+          <h1 class="text-desktop-register">CADASTRE-SE</h1>
           
           <form class="register-login display-flex">
               
               <h2 class="register-text">CADASTRAR</h2>
-              <img class="signup-icons" src="img/icons/user-icon.png" alt="user icon">
               <input id="name-input" class="input-style register-name" type="text" placeholder="NOME">
               
-              <img class="signup-icons" src="img/icons/email-icon.png" alt="email icon">
               <input id="register-input" class="input-style" type="email" placeholder="E-MAIL">
               
-              <img class="signup-icons" src="img/icons/unlocked-icon.png" alt="password icon">
               <input type="password" id="password-register" class="input-style" placeholder="SENHA">
               
-              <img class="signup-icons" src="img/icons/padlock-icon.png" alt="password locked icon"></img>
               <input type="password" id="password-register-confirm" class="input-style" placeholder="CONFIRME SUA SENHA">
 
               <p id="form-validation-messages" class="form-warning-messages hide"></p>
