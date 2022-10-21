@@ -83,6 +83,7 @@ export default () => {
     );
     if (formValidation) {
       formValidationMessages.classList.remove('hide');
+      firebaseWarningMessages.classList.add('hide');
       formValidationMessages.innerHTML = formValidation;
     } else {
       registerWithEmailAndPassword(name.value, email.value, password.value)
