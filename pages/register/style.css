@@ -29,9 +29,9 @@
 .register-login {
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 2.3rem;
+    gap: 2.2rem;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: -1rem;
     margin-bottom: 3rem;
     font-weight: 100;
 }
@@ -46,13 +46,6 @@
     text-align: left;
     box-shadow: 2px 3px 3px rgba(94, 94, 94, 0.329);
     padding-left: 3rem;
-}
-
-.signup-icons {
-    align-self: flex-start;
-    margin-bottom: -4.3rem;
-    margin-left: 0.7rem;
-    z-index: 1;
 }
 
 .btn-register {
@@ -95,7 +88,7 @@
     cursor: pointer;
 }
 
-.text-desktop{
+.text-desktop-register {
     display: none;
 }
 
@@ -114,6 +107,14 @@
         height: 6vh;
     }
 
+    .btn-google-register {
+        width: 50vw;
+    }
+
+    .input-style {
+        width: 60vw;
+    }
+
     .btn-google-register, .link-text-login, .btn-login {
         font-size: larger;
     }
@@ -121,14 +122,14 @@
 
 
 @media (min-width: 1024px) {
-    .register-login-header, .register-text, .signup-icons {
+    .register-login-header, .register-text {
         display: none;
     }
 
-    .text-desktop {
+    .text-desktop-register {
         display: block;
         align-self: center;
-        margin: 4rem 0 -1.5rem 0;
+        margin: 5.2rem 0 -1.5rem 0;
         color: #7B2292;
     }
 
@@ -164,7 +165,7 @@
         padding: 2rem 0 2rem 0;
         flex-wrap: nowrap;
         box-shadow: 2px 3px 3px rgba(94, 94, 94, 0.329);
-        margin: 3.5rem 0 1rem 0;
+        margin: 4.5rem 0 1rem 0;
     }
 
     .input-style {
