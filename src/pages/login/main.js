@@ -26,7 +26,7 @@ export default () => {
     
     <main id="login-page" class="login-page display-flex">
     
-      <h1 class="text-desktop">CONECTE-SE</h1>
+      <h1 class="text-desktop text-desktop-login">CONECTE-SE</h1>
 
       <form class="login-form display-flex">
 

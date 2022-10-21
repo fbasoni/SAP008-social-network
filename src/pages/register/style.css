@@ -63,8 +63,6 @@
     border: none;
     padding: 0.55rem 1.5rem;
     box-shadow: 1px 3px 3px rgba(94, 94, 94, 0.438);
-    margin-top: -1rem;
-    margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -130,7 +128,7 @@
     .text-desktop {
         display: block;
         align-self: center;
-        margin: 2rem 0 1rem 0;
+        margin: 4rem 0 -1.5rem 0;
         color: #7B2292;
     }
 
@@ -166,13 +164,13 @@
         padding: 2rem 0 2rem 0;
         flex-wrap: nowrap;
         box-shadow: 2px 3px 3px rgba(94, 94, 94, 0.329);
-        margin-top: 1rem;
+        margin: 3.5rem 0 1rem 0;
     }
 
     .input-style {
         width: 80%;
         padding-left: 1rem;
-        height: 3.5rem;
+        height: 3rem;
         border: none;
         border-radius: 10px;
         box-shadow: 2px 3px 3px rgba(94, 94, 94, 0.329);
