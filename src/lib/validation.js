@@ -32,24 +32,24 @@ export function handleFirebaseErrors(errorCode) {
   }
 }
 
-const emailRegExpression = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z]+)*$/;
-
 export function validateRegisterForm(name, email, password, confirmPassword) {
-  let message;
+  const emailRegExpression = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z]+)*$/;
   const emailValidation = emailRegExpression.test(email);
-  if (name === '') {
+  let message;
+
+  if (!name) {
     message = 'Digite seu nome.';
     return message;
   }
-  if (email === '') {
+  if (!email) {
     message = 'Digite seu e-mail.';
     return message;
   }
-  if (emailValidation === false) {
+  if (emailValidation !== true) {
     message = 'Este e-mail é inválido.';
     return message;
   }
-  if (password === '') {
+  if (!password) {
     message = 'Digite sua senha.';
     return message;
   }
@@ -57,7 +57,7 @@ export function validateRegisterForm(name, email, password, confirmPassword) {
     message = 'Sua senha deve conter, no mínimo, 6 dígitos.';
     return message;
   }
-  if (confirmPassword === '') {
+  if (!confirmPassword) {
     message = 'Confirme sua senha.';
     return message;
   }
@@ -70,17 +70,12 @@ export function validateRegisterForm(name, email, password, confirmPassword) {
 
 export function validateLoginForm(email, password) {
   let message;
-  const emailValidation = emailRegExpression.test(email);
 
-  if (email === '') {
+  if (!email) {
     message = 'Digite seu e-mail.';
     return message;
   }
-  if (emailValidation === false) {
-    message = 'Este e-mail é inválido.';
-    return message;
-  }
-  if (password === '') {
+  if (!password) {
     message = 'Digite sua senha.';
     return message;
   }
