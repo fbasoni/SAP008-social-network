@@ -22,8 +22,7 @@
     align-self: flex-start;
     color: #7B2292;
     font-weight: 400;
-    font-size: 2em;
-    margin-bottom: 1rem;
+    font-size: 1.8em;
 }
 
 .register-login {
@@ -31,8 +30,7 @@
     flex-direction: column;
     gap: 2.2rem;
     text-align: center;
-    margin-top: -1rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
     font-weight: 100;
 }
 
