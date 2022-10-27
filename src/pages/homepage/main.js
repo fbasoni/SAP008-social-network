@@ -12,18 +12,18 @@ export default () => {
               </video>
             </aside>
 
-            
-            <div class="vertical-line-text-box">
-              <h2 class="connections-headline">FAÇA CONEXÕES REAIS</h2>
-              <p class="homepage-text">Encontre mulheres que compartilhem <br>
-              os mesmos interesses e vivências.</p>
+            <div class="homepage-content-wrapper">
+              <div class="vertical-line-text-box">
+                <h2 class="connections-headline">FAÇA CONEXÕES REAIS</h2>
+                <p class="homepage-text">Encontre mulheres que compartilhem <br>
+                os mesmos interesses e vivências.</p>
+              </div>
+          
+              <nav class="button-initial-page">
+                  <a href="#login" id="btn-login" class="btn-initial-page">ENTRAR</a>
+                  <a href="#register" id="btn-register" class="btn-initial-page">CADASTRAR</a>
+              </nav>
             </div>
-         
-
-            <nav class="button-initial-page">
-                <a href="#login"><button id="btn-login" class="btn-initial-page">ENTRAR</button></a>
-                <a href="#register"><button id="btn-register" class="btn-initial-page">CADASTRAR</button></a>
-            </nav>
         </main>
         <footer class="footer footer-tablet">
             <nav class="nav-footer">
