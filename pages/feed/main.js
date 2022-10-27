@@ -106,9 +106,9 @@ export default () => {
   });
 
   function toggle(id) {
-    modal.classList.toggle('none');
+    modal.classList.remove('none');
     confirmDeletePost.setAttribute('data-idPost', id);
-    fade.classList.toggle('none');
+    fade.classList.remove('none');
   }
 
   const printPosts = async (category) => {
@@ -164,16 +164,16 @@ export default () => {
     editBtn.forEach((btn) => {
       btn.addEventListener('click', (e) => {
         const postToBeEdited = e.currentTarget.dataset.idPostEdit;
-        const postTxtarea = feedContainer.querySelector(`[data-post="${postToBeEdited}"]`);
+        const postTextArea = feedContainer.querySelector(`[data-post="${postToBeEdited}"]`);
         const confirmEditBtn = feedContainer.querySelector(`[data-confirm-edit="${postToBeEdited}"]`);
 
-        postTxtarea.removeAttribute('disabled');
+        postTextArea.removeAttribute('disabled');
         confirmEditBtn.classList.remove('hide');
 
         confirmEditBtn.addEventListener('click', async () => {
           try {
-            await updatePost(postToBeEdited, postTxtarea.value);
-            postTxtarea.setAttribute('disabled', '');
+            await updatePost(postToBeEdited, postTextArea.value);
+            postTextArea.setAttribute('disabled', '');
             confirmEditBtn.classList.add('hide');
             printPosts('allposts');
           } catch (error) {
