@@ -168,6 +168,7 @@ export default () => {
         const confirmEditBtn = feedContainer.querySelector(`[data-confirm-edit="${postToBeEdited}"]`);
 
         postTextArea.removeAttribute('disabled');
+        postTextArea.style.backgroundColor = 'rgba(192,192,192,0.2)';
         confirmEditBtn.classList.remove('hide');
 
         confirmEditBtn.addEventListener('click', async () => {
