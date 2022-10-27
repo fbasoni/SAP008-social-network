@@ -201,7 +201,7 @@ export default () => {
       deletePost(idPostDelete)
         .then(() => {
           toggle();
-          printPosts('allposts');
+          window.location.reload();
         })
         .catch((error) => {
           nullPostMessage.classList.remove('hide');
